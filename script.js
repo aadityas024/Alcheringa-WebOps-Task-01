@@ -49,6 +49,10 @@ function editItem(a) {
 document.getElementById("ham").addEventListener("click", () => {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("open");
+  let body=document.getElementById("body");
+  let s=document.getElementById("sidebar");
+  s.style.height=`${document.body.offsetHeight}px`;
+  
 });
 document.querySelectorAll(".menu").forEach((item) => {
   item.addEventListener("click", () => {
